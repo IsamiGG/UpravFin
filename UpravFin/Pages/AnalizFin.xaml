@@ -1,0 +1,57 @@
+﻿<Page x:Class="UpravFin.Pages.AnalizFin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UpravFin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AnalizFin"
+      Background="#FF5F5F5F">
+
+    <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="435*"/>
+        </Grid.RowDefinitions>
+        <Label Content="АНАЛИЗ ФИНАНСОВОГО СОСТОЯНИЯ ПРЕДПРИЯТИЯ" HorizontalAlignment="Left" Margin="100,-5,0,0" VerticalAlignment="Top" Width="521" FontFamily="Yu Gothic UI" FontSize="16" FontWeight="Bold" Height="33" Grid.Column="1" Foreground="#FF0D3131"/>
+        <Label Content="Начало периода" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="16" FontWeight="Bold" Height="30" Width="151" Margin="4,0,0,0" Grid.Column="1" Grid.Row="1" Foreground="#FF0D3131"/>
+        <Label Content="Конец периода" HorizontalAlignment="Left" Margin="403,0,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="16" FontWeight="Bold" Height="33" Width="139" Grid.Column="1" Grid.Row="1" Foreground="#FF0D3131"/>
+        <DatePicker Name="Dpick1" HorizontalAlignment="Left" Margin="160,3,0,0" VerticalAlignment="Top" Width="139" FontFamily="Sitka Subheading" Height="24" Grid.Column="1" Grid.Row="1"/>
+        <DatePicker Name="Dpick2" HorizontalAlignment="Left" Margin="547,0,0,0" VerticalAlignment="Top" Width="139" FontFamily="Sitka Subheading" Height="33" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="ПОКАЗАТЕЛИ" HorizontalAlignment="Left" Margin="5,38,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="14" FontWeight="Bold" Height="32" Width="113" Grid.Column="1" Foreground="#FF0D3131"/>
+        <Label Content="НА НАЧАЛО&#xD;&#xA; (тыс.руб.)" HorizontalAlignment="Left" Margin="235,38,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="134" FontWeight="Bold" Height="45" Grid.Column="1" Foreground="#FF0D3131"/>
+        <Label Content="НА КОНЕЦ&#xA; (тыс.руб.)" HorizontalAlignment="Left" Margin="421,38,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="116" FontWeight="Bold" Height="45" Grid.Column="1" RenderTransformOrigin="0.46,0.652" Foreground="#FF0D3131"/>
+        <Label Content="ИЗМЕНЕНИЕ&#xA; (тыс.руб.)" HorizontalAlignment="Left" Margin="603,38,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="122" FontWeight="Bold" Height="45" Grid.Column="1" Foreground="#FF0D3131"/>
+        <Label Content="1. Источники формирования&#xD;&#xA;собственных средств (СК)&#xD;&#xA;(Капитал и резервы)" Foreground="#FF0D3131" HorizontalAlignment="Left" Margin="0,86,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="212" Height="55" Grid.Column="1" FontSize="10"/>
+        <TextBox Name ="textBox1" HorizontalAlignment="Left" Height="53" Margin="217,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox2" HorizontalAlignment="Left" Height="53" Margin="403,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox15" HorizontalAlignment="Left" Height="53" Margin="586,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" FontFamily="Sitka Subheading" IsEnabled="False" Grid.Column="1"/>
+        <Label Content="2. Внеоборотные активы &#xD;&#xA;(ВОА)" HorizontalAlignment="Left" Foreground="#FF0D3131" Margin="0,146,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="212" Height="37" Grid.Column="1" FontSize="10"/>
+        <TextBox Name ="textBox3" HorizontalAlignment="Left" Height="37" Margin="217,146,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox4" HorizontalAlignment="Left" Height="37" Margin="403,146,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox14" HorizontalAlignment="Left" Height="37" Margin="586,146,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" FontFamily="Sitka Subheading" IsEnabled="False" Grid.Column="1"/>
+        <Label Content="3.Долгосрочные обязательства&#xD;&#xA;(кредиты и займы)  (ДКЗ) " Foreground="#FF0D3131" HorizontalAlignment="Left" Margin="0,188,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="212" Height="39" Grid.Column="1" FontSize="10"/>
+        <TextBox Name ="textBox5" HorizontalAlignment="Left" Height="39" Margin="217,188,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox6" HorizontalAlignment="Left" Height="39" Margin="403,188,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox13" HorizontalAlignment="Left" Height="39" Margin="586,188,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" FontFamily="Sitka Subheading" IsEnabled="False" Grid.Column="1"/>
+        <Label Content="4. Краткосрочные кредиты &#xD;&#xA;и займы)  (ККЗ) " Foreground="#FF0D3131" HorizontalAlignment="Left" Margin="0,232,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="212" Height="41" Grid.Column="1" FontSize="10"/>
+        <TextBox Name ="textBox7" HorizontalAlignment="Left" Height="41" Margin="217,232,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox8" HorizontalAlignment="Left" Height="41" Margin="403,232,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox12" HorizontalAlignment="Left" Height="41" Margin="586,232,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" FontFamily="Sitka Subheading" IsEnabled="False" Grid.Column="1"/>
+        <Label Content="5.Общая сумма запасов &#xD;&#xA;(СЗ) " Foreground="#FF0D3131" HorizontalAlignment="Left" Margin="0,278,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="212" Height="38" Grid.Column="1" FontSize="10"/>
+        <TextBox Name ="textBox9" HorizontalAlignment="Left" Height="38" Margin="217,278,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox10" HorizontalAlignment="Left" Height="37" Margin="403,278,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontFamily="Sitka Subheading" Grid.Column="1"/>
+        <TextBox Name ="textBox11" HorizontalAlignment="Left" Height="37" Margin="586,278,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" FontFamily="Sitka Subheading" IsEnabled="False" Grid.Column="1"/>
+        <Button Name ="button1" Content="Расчет изменений за период и определение финансового состояния" HorizontalAlignment="Left" Margin="0,321,0,0" Grid.Row="1" VerticalAlignment="Top" Width="416" Height="28" Click="Button1_Click" FontFamily="Yu Gothic UI" FontWeight="Bold" Grid.Column="1" Background="#FF59C6FF"/>
+        <Button Name ="button2" Content="Очистить все" HorizontalAlignment="Left" Margin="646,320,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Height="29" Click="Button2_Click" FontFamily="Yu Gothic UI" FontWeight="Bold" Grid.Column="1" Background="#FF59C6FF"/>
+        <TextBlock Name ="textBox16" HorizontalAlignment="Left" Margin="5,357,0,-3" Grid.Row="1" TextWrapping="Wrap" Text="Состояние: " VerticalAlignment="Top" Height="56" Width="740" FontFamily="Yu Gothic UI" FontWeight="Bold" Grid.Column="1" Background="#FF586E6E"/>
+        <Button Name ="button3" Content="Записать в БД" HorizontalAlignment="Left" Margin="537,320,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Height="29" Click="Button3_Click" FontFamily="Yu Gothic UI" FontWeight="Bold" Grid.Column="1" Background="#FF59C6FF" RenderTransformOrigin="0.5,0.5"/>
+        <Button Name ="button4" Content="Список данных" HorizontalAlignment="Left" Margin="421,321,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" Height="28" Click="Button4_Click" FontFamily="Yu Gothic UI" FontWeight="Bold" Grid.Column="1" Background="#FF59C6FF"/>
+
+    </Grid>
+</Page>

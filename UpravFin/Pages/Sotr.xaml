@@ -1,0 +1,49 @@
+﻿<Page x:Class="UpravFin.Pages.Sotr"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UpravFin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Sotr">
+
+    <Grid Background="#FF5F5F5F">
+
+
+
+
+        <Image  HorizontalAlignment="Left" Height="179" Margin="601,38,0,0" VerticalAlignment="Top" Width="158" Name="kartinka" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="188" Margin="595,43,0,0" VerticalAlignment="Top" Width="169"/>
+        <Button Content="Добавить фото" HorizontalAlignment="Left" Margin="595,236,0,0" VerticalAlignment="Top" Width="186" Height="41" Click="Button_Click_3" Background="#FF78DED0" FontFamily="Yu Gothic UI" FontSize="24"/>
+        <Button x:Name ="button4" Content="НАЗАД" Margin="528,381,0,0" Click="button4_Click" FontFamily="Yu Gothic UI" FontWeight="Bold"  RenderTransformOrigin="-0.022,0.602" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="219" Background="#FF59C6FF" FontSize="24"/>
+        <Button x:Name ="button3_Copy" Content="ДОБАВИТЬ" Margin="10,381,0,0" Click="button3_Click" FontFamily="Yu Gothic UI" FontWeight="Bold"  RenderTransformOrigin="0.502,0.469" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="219" Background="#FF59C6FF" FontSize="24"/>
+        <Label Content="ФИО" Margin="10,65,710,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="41" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" BorderBrush="{x:Null}" Width="80"/>
+        <TextBox Text="{Binding FIO}" Name="TxbFio" HorizontalAlignment="Left" Height="41" Margin="95,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}"/>
+        <Label Content="ЛИЧНАЯ КАРТОЧКА СОТРУДНИКА" Margin="107,8,235,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="50" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" Width="458"/>
+        <Label Content="Дата рождения" Margin="10,111,582,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="45" RenderTransformOrigin="0.489,0.564" Foreground="#FF0D3131" Width="208" BorderBrush="{x:Null}"/>
+        <DatePicker Text="{Binding DateOfBirth}" Name="Dpick2" HorizontalAlignment="Left" Margin="218,112,0,0" VerticalAlignment="Top" Height="44" Width="156" FontSize="20" BorderBrush="{x:Null}"/>
+        <Label Content="Пол" Margin="379,112,355,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="44" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" BorderBrush="{x:Null}"/>
+        <ComboBox Text="{Binding Pol}" Name="Pol" HorizontalAlignment="Left" Margin="445,112,0,0" VerticalAlignment="Top" Width="104" Height="44" FontSize="20" BorderBrush="{x:Null}">
+            <ComboBoxItem Content="М" />
+            <ComboBoxItem Content="Ж" />
+        </ComboBox>
+        <Label Content="Должность" Margin="10,161,641,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="44" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" BorderBrush="{x:Null}"/>
+        <ComboBox Text="{Binding IDJobTittle}" Name="Job" HorizontalAlignment="Left" Margin="160,161,0,0" VerticalAlignment="Top" Width="390" Height="44" FontSize="20" SelectionChanged="Job_SelectionChanged" BorderBrush="{x:Null}">
+            <ComboBoxItem Content="1" />
+            <ComboBoxItem Content="2" />
+        </ComboBox>
+        <Label Content="Адрес" Margin="10,212,693,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="45" RenderTransformOrigin="0.607,0.5" Foreground="#FF0D3131" Width="97" BorderBrush="{x:Null}"/>
+        <Label Content="Паспортные данные" Margin="10,324,528,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="49" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" Width="262" BorderBrush="{x:Null}"/>
+        <Label Content="ИНН" Margin="350,276,364,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="43" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" Width="86" BorderBrush="{x:Null}"/>
+        <Label Content="Телефон" Margin="10,274,655,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="45" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" Width="135" BorderBrush="{x:Null}"/>
+        <Label Content="СНИЛС" Margin="482,324,208,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="24" FontWeight="Bold" Height="49" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131" Width="110" BorderBrush="{x:Null}"/>
+        <TextBox Text="{Binding Address}"  Name="TxbLogin_Copy" HorizontalAlignment="Left" Height="57" Margin="107,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}"/>
+        <TextBox Text="{Binding Telephone}" Name="TxbLogin_Copy1" HorizontalAlignment="Left" Height="45" Margin="145,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}"/>
+        <TextBox Text="{Binding PassportData}" Name="TxbLogin_Copy2" HorizontalAlignment="Left" Height="49" Margin="277,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}"/>
+        <TextBox Text="{Binding INN}" Name="TxbLogin_Copy3" HorizontalAlignment="Left" Height="43" Margin="441,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}"/>
+        <TextBox Text="{Binding SNILS}" Name="TxbLogin_Copy4" HorizontalAlignment="Left" Height="49" Margin="597,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="{x:Null}" TextChanged="TxbLogin_Copy4_TextChanged"/>
+        <Button x:Name ="button5" Content="Сохранить" Margin="277,381,0,0" Click="button5_Click" FontFamily="Yu Gothic UI" FontWeight="Bold"  RenderTransformOrigin="0.498,0.503" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="220" Background="#FF59C6FF" FontSize="24"/>
+
+    </Grid>
+</Page>

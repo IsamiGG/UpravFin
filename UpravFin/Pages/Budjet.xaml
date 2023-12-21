@@ -1,0 +1,20 @@
+﻿<Page x:Class="UpravFin.Pages.Budjet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UpravFin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Budjet">
+
+    <Grid Background="#FF5F5F5F">
+        <Label Content="Бюджет:" Margin="32,108,666,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" FontWeight="Bold" Height="37" RenderTransformOrigin="0.565,0.626" Foreground="#FF0D3131"/>
+        <Button x:Name ="Button1" Content="ДОБАВИТЬ" Margin="30,319,0,0"  FontFamily="Yu Gothic UI" FontWeight="Bold" Click="Button1_Click" RenderTransformOrigin="1.051,0.532" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="204" Background="#FF59C6FF"/>
+        <TextBox x:Name ="textBox1" HorizontalAlignment="Left" Height="37" Margin="139,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontFamily="Sitka Subheading"/>
+        <Label Content="Начало периода" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" FontWeight="Bold" Height="42" Width="196" Margin="30,159,0,0" Foreground="#FF0D3131"/>
+        <DatePicker x:Name="Dpick1" HorizontalAlignment="Left" Margin="231,159,0,0" VerticalAlignment="Top" Width="180" FontFamily="Sitka Subheading" Height="42"/>
+        <Label Content="1. Источники формирования&#xA;собственных средств (СК)&#xA;(Капитал и резервы)" HorizontalAlignment="Left" Margin="30,218,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI" Width="319" Height="96" Foreground="#FF0D3131" FontSize="20"/>
+
+    </Grid>
+</Page>
